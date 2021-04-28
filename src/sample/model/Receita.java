@@ -3,10 +3,14 @@ package sample.model;
 import java.util.ArrayList;
 import java.util.List;
 
+/** Classes **/
+
 public class Receita {
     private String nome;
     private String descricao;
     private List<Ingrediente> ingredientes;
+
+    /** Getter e Setter **/
 
     public Receita() { ingredientes = new ArrayList<>();}
     public List<Ingrediente> getIngredientes(){
@@ -33,6 +37,7 @@ public class Receita {
 
     public String getDescricao() {return descricao;}
 
+    /** ToString **/
 
     @Override
     public String toString() {
